@@ -12,9 +12,9 @@ Public Class HomeController
         If Not IsNothing(result) Then
             ViewData("UNAME") = result.Nome
             ViewBag.ShowMenu = "visible"
-            Return View("Home", New With {result.Nome})
+            Return Redirect("~/Agenda/Agendamentos")
         End If
-        Return View("Index")
+        ViewBag.ShowMenu = "hidden"
+        Return View()
     End Function
-
 End Class

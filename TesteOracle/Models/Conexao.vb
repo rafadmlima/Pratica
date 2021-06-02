@@ -38,7 +38,7 @@ Public Class DB
         End Try
 
     End Sub
-    Public Shared Function Execute(ByVal sql As String, Optional ByVal Banco As String = "") As Boolean
+    Public Shared Function Execute(ByVal sql As String) As Boolean
         Dim con As OracleConnection = Conectar(oradb)
         Try
             Dim ma As OracleCommand = New OracleCommand(sql, con)

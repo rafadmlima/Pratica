@@ -153,10 +153,15 @@
     <Compile Include="App_Start\BundleConfig.vb" />
     <Compile Include="App_Start\FilterConfig.vb" />
     <Compile Include="App_Start\RouteConfig.vb" />
+    <Compile Include="Controllers\AgendaController.vb" />
+    <Compile Include="Controllers\CadastrosController.vb" />
     <Compile Include="Global.asax.vb">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Agendamento.vb" />
     <Compile Include="Models\Conexao.vb" />
+    <Compile Include="Models\Medico.vb" />
+    <Compile Include="Models\Paciente.vb" />
     <Compile Include="Models\Usuario.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -214,6 +219,11 @@
     <Content Include="Scripts\jquery-3.4.1.slim.min.js" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+    <Content Include="Views\Cadastros\Medicos.vbhtml" />
+    <Content Include="Views\Cadastros\InserirMedico.vbhtml" />
+    <Content Include="Views\Cadastros\Pacientes.vbhtml" />
+    <Content Include="Views\Cadastros\InserirPaciente.vbhtml" />
+    <Content Include="Views\Agenda\Agendamentos.vbhtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="favicon.ico" />
