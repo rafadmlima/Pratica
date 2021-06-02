@@ -13,7 +13,7 @@ Namespace Controllers
                 Dim m As New Medico
                 m.Id = DR("Id")
                 m.Nome = DR("Nome")
-                m.CRM = DR("CRM")
+                m.CRM = IIf(Not IsNothing(DR("CRM")), DR("CRM"), "")
                 m.Especialidade = DR("Especialidade")
                 Result.Add(m)
             End While

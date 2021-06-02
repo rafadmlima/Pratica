@@ -19,11 +19,11 @@
         End Set
     End Property
     Private _Paciente As String
-    Public Property Paciente() As Long
+    Public Property Paciente() As String
         Get
             Return _Paciente
         End Get
-        Set(ByVal value As Long)
+        Set(ByVal value As String)
             _Paciente = value
         End Set
     End Property
@@ -38,11 +38,11 @@
         End Set
     End Property
     Private _Medico As String
-    Public Property Medico() As Long
+    Public Property Medico() As String
         Get
             Return _Medico
         End Get
-        Set(ByVal value As Long)
+        Set(ByVal value As String)
             _Medico = value
         End Set
     End Property
@@ -62,6 +62,15 @@
         End Get
         Set(ByVal value As DateTime)
             _DataConsulta = value
+        End Set
+    End Property
+    Private _Situacao As String
+    Public Property Situacao() As String
+        Get
+            Return _Situacao
+        End Get
+        Set(ByVal value As String)
+            _Situacao = value
         End Set
     End Property
 

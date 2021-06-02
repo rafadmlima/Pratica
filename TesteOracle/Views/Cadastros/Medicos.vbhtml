@@ -6,7 +6,7 @@ End Code
 <h2>Medicos</h2>
 
 <p>
-    @Html.ActionLink("Novo", "InserirMedico", New With {.class = "btn btn-primary"})
+    @Html.ActionLink("Novo", "InserirMedico", New With {.htmlAttributes = New With {.class = "btn btn-primary"}})
 </p>
 <table class="table">
     <tr>
